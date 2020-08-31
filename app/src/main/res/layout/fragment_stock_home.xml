@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/header_background"
+    tools:context=".StockHomeFragment" >
+
+    <TextView
+        android:id="@+id/textView_stockAccount_header_AccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Meine Aktien"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_account_input_background"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textView_stockAccount_header_balance"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="left"
+            android:textSize="25dp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/textView_stockAccount_header_buyPrice"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/textView_stockAccount_header_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/ic_edit"
+            android:id="@+id/buttonEditStock"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/list_background">
+
+        <ListView
+            android:background="@drawable/list_background"
+            android:id="@+id/listViewAccountsStock"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="60dp"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none"
+            android:dividerHeight="10dp">
+        </ListView>
+        <Button
+            android:id="@+id/add_stock_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/ic_add_button" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

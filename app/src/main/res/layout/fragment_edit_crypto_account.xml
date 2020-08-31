@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_crypto_account_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_background"
+    android:orientation="vertical"
+    tools:context=".AddCryptoAccountFragment">
+
+    <ScrollView
+        android:background="@drawable/add_account_input_background"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/editCryptoAccountTextViewHeader"
+                android:layout_margin="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+
+
+
+            <EditText
+                android:id="@+id/editTextAccountNameCryptoEdit"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:background="@drawable/textfield_background"
+                android:layout_marginTop="0dp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:hint="Name für die Wallet"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextBalanceCryptoEdit"
+                android:background="@drawable/textfield_background"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:hint="Guthaben"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:background="@drawable/textfield_background"
+                android:id="@+id/editTextAccountCurrencyCryptoEdit"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:hint="Währung"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:background="@drawable/textfield_background"
+                android:id="@+id/editTextAccountCryptoBuyPriceCryptoEdit"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:hint="Einkaufspreis"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:background="@drawable/textfield_background"
+                android:id="@+id/editTextCryptoAdressCryptoEdit"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:hint="Wallet-Adresse"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/editCryptoAccountWarning"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#D50000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/deleteCryptoAccountYesButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add_button_background"
+                    android:text="Ja"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/deleteCryptoAccountNoButton"
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add_button_background"
+                    android:text="Nein"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+            <Button
+                android:background="@drawable/add_button_background"
+                android:id="@+id/buttonSaveEditsAccountCrypto"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="70dp"
+                android:text="Speichern"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/deleteCryptoAccountButton"
+                android:background="@drawable/ic_delete_icon"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="30dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

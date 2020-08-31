@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout_add_stock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_background"
+    android:orientation="vertical"
+    tools:context=".EditTransactionFragment">
+
+    <ScrollView
+
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/add_account_input_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/editTransactionTextViewHeader"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextBankAccountTransactionNameEdit"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:background="@drawable/textfield_background"
+                android:layout_marginTop="30dp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:hint="Name des Umsatzes"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextBankAccountTransactionBalanceEdit"
+                android:background="@drawable/textfield_background"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:hint="Summe"
+                android:textColor="@color/white" />
+
+            <Switch
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:id="@+id/switchInOutEditTransactionBankaccount"
+                android:layout_gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Einnahme / Ausgabe"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/editTransactionWarning"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#D50000"
+                android:text="Möchten Sie diese Transaktion wirklich löschen?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/deleteTransactionYesButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add_button_background"
+                    android:text="Ja"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/deleteTransactionNoButton"
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add_button_background"
+                    android:text="Nein"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+            <Button
+                android:background="@drawable/add_button_background"
+                android:id="@+id/buttonEditTransactionBankAccount"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="50dp"
+                android:text="Speichern"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/deleteTransaction"
+                android:background="@drawable/ic_delete_icon"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="30dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

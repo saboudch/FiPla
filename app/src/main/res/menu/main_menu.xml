@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_menu_home"
+        android:icon="@drawable/ic_home_menu"
+        android:title="Übersicht" />
+    <item
+        android:id="@+id/navigation_accounts_home"
+        android:icon="@drawable/ic_account_menu"
+        android:title="Konten" />
+    <item
+        android:id="@+id/navigation_wallet_home"
+        android:icon="@drawable/ic_wallet_menu"
+        android:title="Aktiendepots" />
+    <item
+        android:id="@+id/navigation_crypto_home"
+        android:icon="@drawable/ic_crypto_menu"
+        android:title="Kryptowährungen"/>
+    <item
+        android:id="@+id/navigation_transaction_home"
+        android:icon="@drawable/ic_transaction_menu"
+        android:title="Umsätze" />
+
+</menu>

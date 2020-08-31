@@ -1,0 +1,12 @@
+<resources>
+   <!-- <color name="colorPrimary">#6f86d6</color>-->
+    <color name="cardColor">#E8ADDAEF</color>
+    <color name="colorPrimary">#6D15120F</color>
+    <color name="colorSecondary">#48c6ef</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="backgroundListItem">#D84C4C</color>
+    <color name="backgroundEditText">#59F7F2F2</color>
+</resources>

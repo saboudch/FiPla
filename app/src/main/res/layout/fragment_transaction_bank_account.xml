@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/header_background"
+    tools:context=".TransactionBankAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView_transaction_bankaccount_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Meine Umsätze"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Umsätze"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+    <ListView
+        android:layout_marginTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/listViewTransactionsBankaccount"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginBottom="150dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"></ListView>
+
+    <Button
+        android:id="@+id/add_transaction_bankaccount_button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:background="@drawable/ic_add_button"
+        android:backgroundTint="@color/white"/>
+
+
+</LinearLayout>
